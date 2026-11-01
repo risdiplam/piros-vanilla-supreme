@@ -17,11 +17,18 @@ a:hover{text-decoration:underline}
 .wrap{max-width:920px;margin:0 auto;padding:24px 16px 60px}
 h1{font-size:30px;font-weight:600;margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .siteintro{color:var(--ink2);margin:10px 0}
-h2{font-size:22px;font-weight:600;margin:36px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);scroll-margin-top:16px}
+h2{font-size:22px;font-weight:600;margin:36px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);scroll-margin-top:64px}
 h3{font-size:16.5px;margin:0}
 .small,.note{font-size:14px;color:var(--dim)}
 .note{margin:8px 0}
 .toc{font-size:15px;margin:14px 0 4px}
+.menu{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.menu-in{max-width:920px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:14px;min-height:48px}
+.menu .brand{font-weight:600;white-space:nowrap;color:var(--ink)}
+.menu nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1}
+.menu nav::-webkit-scrollbar{display:none}
+.menu nav a{flex:0 0 auto;padding:8px;font-size:14px;color:var(--ink2);white-space:nowrap}
+.menu nav a:hover{color:var(--link);text-decoration:none}
 .warn{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:4px;padding:10px 14px;margin:16px 0;font-size:15px}
 .card{border:1px solid var(--line);border-radius:4px;padding:6px 16px;margin:12px 0}
 .card p{margin:10px 0}
@@ -57,6 +64,13 @@ code{overflow-wrap:anywhere}
 .faq p{margin:2px 0}
 @media(max-width:640px){ul.picks{columns:1} h1{font-size:25px} h2{font-size:20px} progress{width:150px}}
 </style></head><body><div class="wrap" id="top">
+<div class="menu"><div class="menu-in">
+<a class="brand" href="#top">Piro’s Vanilla Supreme</a>
+<nav>
+<a href="#about">About</a><a href="#prep">Before you start</a><a href="#downloads">Downloads</a><a href="#order">Install order</a><a href="#omit">Omissions</a><a href="#log">Log checklist</a><a href="#smoke">Smoke test</a><a href="#lookout">Look out for</a><a href="#faq">FAQ</a><a href="#replay">Replaying</a>
+</nav>
+</div></div>
+
 <header>
 <h1>Piro’s Vanilla Supreme</h1>
 <p class="siteintro">This is my personal hub for the Beamdog Infinity Engine Enhanced Editions: Baldur’s Gate, Siege of Dragonspear, Baldur’s Gate II, and Icewind Dale. For now it hosts one thing: the install guide below. This is the EET install I built for my own playthrough and verified component by component. Everything needed to reproduce it exactly is on this page. More may be added later.</p>
